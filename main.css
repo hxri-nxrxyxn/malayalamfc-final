@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  section.programs div.layout div.row {
+    flex-direction: column;
+  }
+  section.programs div.layout div.row > * {
+    width: 100% !important;
+  }
+  section.programs div.layout div.row div {
+    margin-bottom: 4rem;
+  }
+  section.programs div.layout div.row:last-child {
+    margin-top: 0 !important;
+  } 
+  section.home div.layout {
+    flex-direction: column;
+  }
+  section.home div.layout > * {
+    width: 100% !important;
+  }
+  section.home img {
+    order: 0 !important;
+    margin-bottom: 5rem;
+  }
+}
+
+html {
+ font-size: 10px;
+}
+
+body {
+  font-family: 'Inter';
+  background: white;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  background: transparent;
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  list-style: none;
+} 
+
+nav a {
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+nav a.super {
+  font-weight: 600;
+}
+
+nav a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+section {
+  padding: 5rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+section h1 {
+  margin-bottom: 2rem;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+  text-decoration-color: lightgray;
+  font-size: 4rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+section p {
+  font-weight: 300;
+  font-size: clamp(1rem, 4vw, 2rem);
+  line-height: 2.4rem;
+  color: #2d3436;
+}
+
+b {
+  font-weight: 600;
+}
+
+section.programs div.layout div.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.programs div.layout div.row > * {
+  width: 45%;
+}
+
+section.programs div.layout div.row:last-child {
+  margin-top: 5rem;
+}
+
+section.home div.layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.home div.layout > * {
+  width: 45%;
+}
+
+section.home img {
+  height: 45%;
+  order: 2;
+}
+
+div.gallery {
+  margin: 5rem 0;
+  height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100vw; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+div.gallery div h1 {
+  color: white;
+  font-size: 6rem;
+} 
+
+div.gallery div h1 a {
+  text-decoration: none;
+  color: red;
+}
+
+header {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: end;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url('images/header.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header img {
+  width: 28rem;
+  transform: translateX(45%);
+}
+
+header h1 {
+  font-size: clamp(2rem, 8vw, 8rem);
+}
+
+header h2 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  font-weight: 300;
+}
+
+header * {
+  margin: 1rem;
+  color: white;
+}
+
+form {
+  padding: 5rem 0;
+}
+
+form div {
+  display: flex;
+}
+
+form div:nth-child(1) > input, form div:nth-child(3) > input {
+  flex: 1;
+}
+
+form label {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+form div:not(:last-child) label {
+  transform: translateY(0.8rem);
+}
+
+form input[type=text], form input[type=password] {
+  margin-left: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #dfe6e9;
+  padding: 1rem;
+  color: #2d3436;
+  font-family: 'Inter';
+  font-weight: 600;
+}
+
+form input[type=text], form input[type=password], form input[type=submit]{
+  border: 2px solid #00b894;
+}
+
+form input[type=radio] {
+  margin-left: 0.7rem;
+  margin-right: 2rem;
+  transform: translateY(0.8rem);
+}
+
+form input[type=submit] {
+  padding: 1rem;
+  width: 10rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 20px;
+  background-color: lightgray;
+}
+
+section.coach div.layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.coach div.layout > div {
+  width: 75%;
+}
+
+section.coach div.layout > img {
+  width: 20%;
+  height: 20%;
+}
+
+section.coach div.layout__info div {
+  margin-bottom: 3rem;
+  display: flex;
+}
+
+section.coach div.layout__info div > p  {
+  transform: translateY(0.75rem);
+}
+section.coach div.layout__info div > h5  {
+  flex: 1; 
+  margin-left: 1rem;
+  background-color: #dfe6e9;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+    
+
+section.coach form div {
+  display: flex;
+} 
+
+section.coach form label {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+section.coach table {
+  width: 100%;
+  text-align: left;
+  font-size: 2rem;
+}
+
+section.coach form div:last-child label {
+  transform: translateY(0.75rem);
+}
+
+section.coach form div select, section.coach form div input {
+  flex: 1;
+  margin-left: 2rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #dfe6e9;
+  font-family: 'Inter';
+  font-weight: 600;
+}
